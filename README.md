@@ -4,7 +4,8 @@ Utility to extend mysql command line to output JSON
 
 mysql  -uUSER_NAME -pPASSWROD  -h DB_HOST -e "SELECT countryCode,countryName,currencyCode FROM cloudvpn.countries; "
 
-- countryCode - countryName          - currencyCode -
+| countryCode | countryName          | currencyCode |
+| ----------- | -------------------- | ------------ |
 | AD          | Andorra              | EUR          |
 | AE          | United Arab Emirates | AED          |
 | AF          | Afghanistan          | AFN          |
