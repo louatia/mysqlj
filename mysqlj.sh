@@ -1,5 +1,5 @@
 #!/bin/bash
-echo '['
+echo '"data":['
 row_num=0
 results=$(mysql "$@")
 echo "$results" |while read -r row; do
@@ -44,4 +44,4 @@ else
 fi
 
 done 
-echo ']'
+echo ']}'
