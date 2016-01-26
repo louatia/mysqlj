@@ -2,7 +2,7 @@
 Utility to extend mysql command line to output JSON
 
 
-mysql  -u<user> -p<password>  -h <host.domain.com> -e "SELECT countryCode,countryName,currencyCode FROM cloudvpn.countries; "
+mysql  -uUSER_NAME -pPASSWROD  -h DB_HOST -e "SELECT countryCode,countryName,currencyCode FROM cloudvpn.countries; "
 +-------------+----------------------+--------------+
 | countryCode | countryName          | currencyCode |
 +-------------+----------------------+--------------+
@@ -21,6 +21,7 @@ mysql  -u<user> -p<password>  -h <host.domain.com> -e "SELECT countryCode,countr
 
 
 ./mysqlj.sh  -u<user> -p<password> -h <host.domain.com> -e "SELECT countryCode,countryName,currencyCode FROM cloudvpn.countries; "
+```javascript
 [
 {"countryCode":"AD","countryName":"Andorra","currencyCode":"EUR"}
 ,{"countryCode":"AE","countryName":"United Arab Emirates","currencyCode":"AED"}
@@ -33,3 +34,4 @@ mysql  -u<user> -p<password>  -h <host.domain.com> -e "SELECT countryCode,countr
 ,{"countryCode":"AQ","countryName":"Antarctica","currencyCode":""}
 ,{"countryCode":"AR","countryName":"Argentina","currencyCode":"ARS"}
 ]
+```
